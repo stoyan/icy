@@ -23,6 +23,7 @@
     [uiweb release];
 	[window addSubview:nav.view];
     [self.window makeKeyAndVisible];
+    [NSClassFromString(@"WebView") _enableRemoteInspector];
     return YES;
 }
 
